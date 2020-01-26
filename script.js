@@ -15,5 +15,5 @@ else if (Number(guess) < secretNumber) {
     alert("Number too low..guess again");
 }
 else {
-    alert("C'mon ..you can do this..try again");
+    alert("C'mon ..whatya doing?..try again");
 }
