@@ -1,108 +1,27 @@
-var count = 0;
+/*var count = 300;
 
-function cc(card) {
-    let betHold = '';
-    const obj = {
-        2: 1,
-        3: 1,
-        4: 1,
-        5: 1,
-        6: 1,
-        7: 0,
-        8: 0,
-        9: 0,
-        10: -1,
-        'J': -1,
-        'Q': -1,
-        'K': -1,
-        'A': -1
+for ( var i = 300 ; i <=333 ; i+=1){
+    if ( i % 2 !== 0) {
+        console.log(i);
     }
-
-    // function betOrHold(count) {
-    //     return count > 0 ? "Bet" : "Hold"
-    // }
-
-    // if (obj[`${card}`] === 1) {
-    //     count++;
-    //     return `${count} ${betOrHold(count)}`
-    // }
-    // else if (obj[`${card}`] === 0) {
-    //     count++;
-    //     return `${count} ${betOrHold(count)}`
-    // }
-    // else if (obj[`${card}`] === -1) {
-    //     count++;
-    //     return `${count} ${betOrHold(count)}`
-    // }
-    // else {
-    //     return "Dunno"
-    // }
-
-var count = 0;
-
-function cc(card) {
-    let betHold = '';
-    const obj = {
-        2: 1,
-        3: 1,
-        4: 1,
-        5: 1,
-        6: 1,
-        7: 0,
-        8: 0,
-        9: 0,
-        10: -1,
-        'J': -1,
-        'Q': -1,
-        'K': -1,
-        'A': -1
+}
+*/
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* ";
     }
-
+    return line + "\n";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    // switch (obj[String(card)]) {
-    //     case 1:
-    //         count++;
-    //         return `${count} ${betOrHold(count)}`
-    //     case 0:
-    //         return `${count} ${betOrHold(count)}`
-    //     case -1:
-    //         count--;
-    //         return `${count} ${betOrHold(count)}`
-    //     default:
-    //         return "Dunno"
-    // }
-
-    switch (obj[String(card)]) {
-        case 1:
-            count++;
-            betHold = count > 0 ? "Bet" : "Hold"
-        case 0:
-            betHold = count > 0 ? "Bet" : "Hold"
-        case -1:
-            count--;
-            betHold = count > 0 ? "Bet" : "Hold"
-        default:
-            break;
+// your code goes here.  Make sure you call makeLine() in your own code.
+function buildTriangle(x){
+    var triangle = "";
+    for ( i = 1 ; i <= x ; i++){
+        triangle += makeLine(i);
     }
-    return `${count} ${betHold}`
+    return triangle
 }
 
-
-console.log(cc(2)); console.log(cc(3)); console.log(cc(7)); console.log(cc('K')); console.log(cc('A'));
-
-function collectAverageSalary(){
-    
-}
+// test your code by uncommenting the following line
+console.log(buildTriangle(10));
