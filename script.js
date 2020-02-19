@@ -24,4 +24,4 @@ function buildTriangle(x){
 }
 
 // test your code by uncommenting the following line
-console.log(buildTriangle(10));
+document.querySelector("body").textContent=(buildTriangle(10));
